@@ -29,6 +29,26 @@
       <button onclick="getChai()">Get Chai</button>
       <div id="message"></div>
     
-    <script src="app.js"></script>
+      <script>
+        function getChai() {
+          document.getElementById("message").textContent = "Chai ban rahi hai... ⏳";
+    
+          // Yeh chai ka promise hai
+          let chaiPromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+              const dukaanKhuliHai = Math.random() > 0.3; // 70% chance dukaan khuli hai
+              if (dukaanKhuliHai) {
+                resolve("Chai aa gayi Beeru! ☕✅");
+              } else {
+                reject("Dukaan band thi Beeru! ❌");
+              }
+            }, 2000);
+          });
+    
+          chaiPromise
+            .then(msg => document.getElementById("message").textContent = msg)
+            .catch(err => document.getElementById("message").textContent = err);
+        }
+      </script>
 </body>
 </html>
