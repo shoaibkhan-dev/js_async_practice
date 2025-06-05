@@ -61,6 +61,6 @@ class Car {
 let car1 = new Car("BUGGATTI", 2025)
 let car2 = new Car("HONDA", 2020)
 
-console.log(car1.start())
+console.log(car1.start());
 
 
