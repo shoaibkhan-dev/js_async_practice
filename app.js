@@ -4,7 +4,7 @@ const promise = new Promise((resolve, reject)=>{
    if(!error){
     resolve({name: "shoaib", age: 23})
    }else{
-    reject("something went wrong")
+    reject("something went wrong");
    }
  }, 3000)
 })
