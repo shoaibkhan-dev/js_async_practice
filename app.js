@@ -64,3 +64,4 @@ let car2 = new Car("HONDA", 2020)
 console.log(car1.start());
 
 
+ [1, 2, 3, 4, 5] = number 
