@@ -95,6 +95,19 @@ const promiseOne = new Promise((resolve, reject)=>{
        }
     }, 4000)
 })
+promise.then((user)=>{
+    console.log(user)
+    return user.userName
+})
+.then((userName)=>{
+ console.log(userName)
+})
+.catch((error)=>{
+    console.log(error)
+})
+.finally(()=>{
+    console.log("no error founded")
+})
 
 async function getAllUsers() {
     try {
