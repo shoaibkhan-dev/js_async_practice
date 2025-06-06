@@ -64,4 +64,22 @@ let car2 = new Car("HONDA", 2020)
 console.log(car1.start());
 
 
- [1, 2, 3, 4, 5] = number 
+ class Person {
+    constructor(firstName, lastName, age){
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.age = age
+    }
+    fullName(){
+        console.log(`Hello my name is ${this.firstName} ${this.lastName} and i'm ${this.age} years old`)
+    }
+ }
+
+ let p1 = new Person ("Muhammad","Hassan",20);
+ let p2 = new Person ("Shoaib", "Khan", 23);
+
+
+
+setTimeout(function(){
+    console.log(p2.fullName())
+},3000)
