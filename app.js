@@ -83,3 +83,15 @@ console.log(car1.start());
 setTimeout(function(){
     console.log(p2.fullName())
 },3000)
+
+
+const promiseOne = new Promise((resolve, reject)=>{
+    setTimeout(function(){
+       let error = true;
+       if(!error){
+        resolve({name: "shoaib", age: 23})
+       } else{
+        reject("something went wrong")
+       }
+    }, 4000)
+})
