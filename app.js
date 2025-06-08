@@ -120,5 +120,13 @@ async function getAllUsers() {
 }
 
 
-
+async function users() {
+    try {
+        const userApi = await fetch("https://jsonplaceholder.typicode.com/users")
+        const data = await userApi.json()
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
 
